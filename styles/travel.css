@@ -13,133 +13,7 @@ main {
 
 }
 
-/* heading style */
-/* .website-header {
-    margin-left: 135px;
-    margin-top: 50px;
-}
-
-nav {
-    margin-right: 130px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-
-
-
-nav ul {
-    display: flex;
-    align-items: center;
-
-}
-
-nav ul li {
-    list-style: none;
-    margin-left: 44px;
-
-}
-
-.home {
-    font-weight: 700;
-
-}
-
-nav li a {
-    text-decoration: none;
-    color: #424247;
-    font-size: 1.125rem;
-    font-weight: 400;
-
-}
-
-.bannar {
-    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../Images/Group\ 13\ \(1\)\ \(1\).png');
-    width: 1170px;
-    height: 500px;
-    background-repeat: no-repeat;
-    border-radius: 16px;
-    margin-right: 135px;
-    margin-top: 50px;
-}
-.bannar-details{
-    text-align: center;
-    
-   
-}
-
-.bannar-title {
-    color: #FFF;
-    font-size: 64px;
-    font-weight: 800;
-    text-align: center;
-    margin: 106px auto 24px;
-}
-
-.bannar-description {
-    color: #FFF;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    width: 676px;
-    text-align: center;
-    margin: 0 auto;
-
-}
-
-.selection {
-    display: inline-flex;
-    padding: 16px;
-    gap: 24px;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.30);
-    padding: 0 auto;
-    
-
-}
-
-.select-trip {
-    width: 174px;
-    height: 52px;
-    border-radius: 8px;
-    background: #FFF;
-    border: none;
-}
-
-
-.primary-btn {
-    width: 174px;
-    height: 52px;
-    border-radius: 8px;
-    background: #FF5400;
-    color: #FFF;
-    font-size: 16px;
-    font-weight: 700;
-    border: none;
-} */
-
 /* shared style  */
-.logo-website-name {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    width: 48px;
-    height: 56px;
-    margin-right: 20px;
-
-}
-
-.website-name {
-    color: #131318;
-    font-size: 18px;
-    font-weight: 800;
-
-}
-
 .color-orange {
     color: #FF5400;
 
@@ -182,6 +56,136 @@ nav li a {
     margin: 32px 0 20px;
 }
 
+/* header style  */
+.website-header {
+    margin-left: 135px;
+    margin-top: 50px;
+}
+
+.logo-website-name {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 48px;
+    height: 56px;
+    margin-right: 20px;
+
+}
+
+.website-name {
+    color: #131318;
+    font-size: 36px;
+    font-weight: 800;
+
+}
+
+nav {
+    margin-right: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 44px;
+
+}
+
+.home {
+    font-weight: 700;
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424247;
+    font-size: 1.125rem;
+    font-weight: 400;
+
+}
+
+.bannar {
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../image/bannar.png');
+    width: 1170px;
+    height: 500px;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    margin-right: 135px;
+    margin-top: 50px;
+}
+
+.bannar-title {
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 105px;
+    padding-bottom: 0;
+}
+
+.bannar-description {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 676px;
+    text-align: center;
+    margin: 20px auto;
+
+}
+
+.bannar-option {
+    color: rgba(19, 19, 24, 0.50);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+.search-btn{
+    border-radius: 8px;
+    background: #FF5400;
+    border: none;
+    color: #FFF;
+    width: 174px;
+    height: 75px;
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.selection {
+    display: flex;
+    align-items: center;
+    width: 800px;
+    height: 84px;
+    padding: 16px;
+    gap: 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    margin: 0 auto;
+    
+    
+
+}
 /* popular spot style  */
 
 .about-popular-spot {
@@ -469,14 +473,17 @@ footer {
     width: 769px;
     margin: 15px auto 30px;
 }
-.social-icon{
+
+.social-icon {
     margin: 32px 632px 50px;
 }
+
 .footer-line {
     width: 872px;
     height: 1px;
     background: rgba(19, 19, 24, 0.10);
 }
-.credit{
+
+.credit {
     padding: 50px 600px 0;
 }
