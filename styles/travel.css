@@ -34,6 +34,8 @@ main {
     font-size: 40px;
     font-weight: 800;
     margin: 0;
+    text-align: justify;
+
 }
 
 .description {
@@ -41,6 +43,7 @@ main {
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+    text-align: center;
 }
 
 .details {
@@ -158,7 +161,8 @@ nav li a {
     padding: 10px;
 
 }
-.search-btn{
+
+.search-btn {
     border-radius: 8px;
     background: #FF5400;
     border: none;
@@ -172,6 +176,7 @@ nav li a {
     align-items: center;
     padding: 15px;
 }
+
 .selection {
     display: flex;
     align-items: center;
@@ -182,10 +187,11 @@ nav li a {
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
     margin: 0 auto;
-    
-    
+
+
 
 }
+
 /* popular spot style  */
 
 .about-popular-spot {
@@ -273,6 +279,7 @@ nav li a {
     color: #5A5A5D;
     width: 486px;
     margin: 0;
+    text-align: start;
 }
 
 .card-flex {
@@ -284,11 +291,11 @@ nav li a {
 .mountain {
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    gap: 25px;
 }
 
 .about-mountain {
-    max-width: 532px;
+    width: 532px;
 }
 
 .mountain-bullet {
@@ -333,6 +340,7 @@ nav li a {
 
 .play-bottom-left {
     display: flex;
+    gap: 10px;
     justify-content: space-between;
     align-items: center;
     position: absolute;
@@ -342,6 +350,7 @@ nav li a {
 
 .play-bottom-right {
     display: flex;
+    gap: 10px;
     justify-content: space-between;
     align-items: center;
     position: absolute;
@@ -378,6 +387,7 @@ nav li a {
 .contact-details {
     color: #5A5A5D;
     margin-bottom: 24px;
+    text-align: start;
 }
 
 .contact-line {
@@ -458,10 +468,23 @@ footer {
     height: 502px;
 }
 
-.footer {
+.footer-div {
     display: flex;
+    gap: 20px;
     padding-top: 110px;
     justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 40px;
+    height: 46.673px;
+}
+
+.footer-website-name {
+    color: #131318;
+    font-size: 32px;
+    font-weight: 800;
 }
 
 .footer-des {
@@ -486,4 +509,152 @@ footer {
 
 .credit {
     padding: 50px 600px 0;
+}
+
+
+/* responsibe style  */
+
+@media screen and (max-width:600px) {
+    main{
+        margin: 10px;
+    }
+
+    .about-popular-spot,
+    .spot-containar,
+    .card-flex,
+    .mountain,
+    .contact {
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+
+    .popular-spot {
+        width: 335px;
+        height: 342px;
+        margin: 5px;
+    }
+
+    .about-spot,
+    .spot,
+    .spot img, .about-mountain, 
+    .mountain-image,
+    .mountain-image>img,
+    .offer-containar,
+    .offer-image {
+        width: 335px;
+        margin: 0;
+    }
+
+    .offer-containar,
+    .offer-image {
+        height: 300px;
+    }
+    .mountain-image,
+    .mountain-image>img {
+        height: 200px;
+    }
+
+    .heading,
+    .spot-name,
+    .card-title,
+    .offer h4,
+    .offer h3 {
+        font-size: 20px;
+
+    }
+
+    .details,
+    .heading,
+    .price {
+        margin: 0;
+
+    }
+
+    .card {
+        width: 271px;
+    }
+
+    .description,
+    .mountain-bullet {
+        font-size: 14px;
+        line-height: 24px;
+        max-width: 309px;
+    }
+
+    .about-mountain{
+    max-width: 335px;
+}
+
+.play-bottom-right {
+    bottom: 40px;
+    left: 250px;
+    gap: 5px;
+}
+
+.play-bottom-left {
+    gap: 5px;
+    bottom: 40px;
+}
+
+.duration {
+    bottom: 20px;
+    width: 303px;
+}
+
+.contact-form {
+    padding: 8px;
+    width: 312px;
+}
+
+.input-design,
+.Subscribe {
+    width: 280px;
+    height: 52px;
+    padding: 5px;
+}
+
+.offer {
+    width: 170px;
+    height: 70px;
+    padding-top: 0;
+    top: 68%;
+    left: 48%;
+}
+
+footer {
+    width: 375px;
+    height: 309px;
+}
+
+.footer-logo {
+    width: 28.px;
+    height: 33px;
+}
+
+.footer-website-name {
+    font-size: 20px;
+}
+
+.footer-des {
+    font-size: 14px;
+    line-height: 24px;
+    width: 287px;
+    margin: 5px auto 10px;
+}
+
+.footer-line {
+    width: 335px;
+}
+
+.credit {
+    font-size: 14px;
+    padding: 0 90px;
+}
+.footer-div{
+    padding-top: 30px;
+}
+.social-icon {
+    margin: 0px 90px 10px;
+}
 }
